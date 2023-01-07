@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "fs.wrapcifs"
+packages = [{ include = "fs", from = "src"}]
+version = "0.1.0"
+description = "Pyfilesystem2 wrapper for case insensitive access to a filesystem"
+license = "MIT"
+authors = ["Omni Flux <omniflux@omniflux.com>"]
+readme = "README.rst"
+repository = "https://github.com/Omniflux/fs.wrapcifs"
+keywords = ["filesystem", "Pyfilesystem2"]
+classifiers = [
+	"Development Status :: 5 - Production/Stable",
+	"Intended Audience :: Developers",
+	"Operating System :: OS Independent",
+	"Topic :: Software Development :: Libraries :: Python Modules",
+	"Topic :: System :: Filesystems"
+]
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+fs = "^2.4.16"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
